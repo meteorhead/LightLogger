@@ -3,6 +3,8 @@
 
 int main()
 {
-	LightLogger::getLightLoggerInstance().logToConsole("Trouble in paradise",LightLogger::LogLevel::WARNING);
+	LOGLEVEL(LightLogger::LogLevel::INFO);
+	LIGHTLOG << "Hello LightLogger!";
+
 	return 0;
 }
